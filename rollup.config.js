@@ -53,7 +53,8 @@ if (isProduction) {
 
 export default {
   entry: DIST_ENTRY,
-  format: 'cjs',
+  format: 'umd',
+  moduleName: 'vueLazyloadComponent',
   plugins: plugins,
   dest: DIST_JS,
   sourceMap: !isProduction
